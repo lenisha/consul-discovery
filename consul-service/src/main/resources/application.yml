@@ -1,0 +1,27 @@
+spring:
+  application:
+    name: spring-service
+  cloud:
+    consul:
+      enabled: true
+      host: 104.211.63.244
+      port: 8500
+      discovery:
+        register: true
+        discovery: enabled
+        serviceName: spring-service
+        instanceId: ${spring.application.name}:${random.value}
+        #healthCheckUrl: http://${HOST_IP}:${server.port}/health
+        tags: spring, profile=prod
+management:
+  security.enabled: "false"
+  endpoints:
+    web:
+      exposure.include: "*"
+      base-path: "/"
+
+
+logging.level:
+  root: INFO
+  org.springframework.cloud.consul: DEBUG
+  org.apache.http.wire: INFO

@@ -1,0 +1,30 @@
+az aks install-cli
+az aks get-credentials --resource-group openapi-rg --name openapi
+
+#ALIAS IN WINdows
+doskey k=kubectl
+
+# Setting up Consul
+# Clone Repo (No Helm Repo Yet)
+git clone https://github.com/hashicorp/consul-helm.git
+cd ~/consul-helm
+# Install Consul
+# Updated values.yaml file to auto-inject side-car
+# https://www.consul.io/docs/platform/k8s/connect.html
+helm install . --name consul-helm
+kubectl get deploy,po,svc,statefulset,poddisruptionbudget,daemonset,cm
+kubectl port-forward svc/consul-helm-ui 8080:80
+# Helm Cleanup (PV & PVC Issues)
+helm delete consul-helm --purge
+# CAREFUL: This deletes all PVCs
+kubectl delete pvc --all
+# CAREFUL: This deletes all PVs
+kubectl delete pv --all
+
+ k expose pod consul-helm-server-0 --dry-run --type=LoadBalancer -o yaml > service-server.yml
+
+# Run KUARD Pod
+kubectl run kuard --image=gcr.io/kuar-demo/kuard-amd64:1 --restart='Never' --port=8080
+kubectl expose pod kuard --port=8080 --target-port=8080
+kubectl get po,svc -l run=kuard
+kubectl port-forward svc/kuard 8085:8080

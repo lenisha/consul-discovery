@@ -1,0 +1,424 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] Building consul-service 0.0.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:3.1.0:clean (default-clean) @ consul-service ---
+[INFO] Deleting C:\projects\consul-discovery\consul-service\target
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ consul-service ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 0 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:compile (default-compile) @ consul-service ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 1 source file to C:\projects\consul-discovery\consul-service\target\classes
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ consul-service ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory C:\projects\consul-discovery\consul-service\src\test\resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:testCompile (default-testCompile) @ consul-service ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 1 source file to C:\projects\consul-discovery\consul-service\target\test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.1:test (default-test) @ consul-service ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-jar-plugin:3.1.0:jar (default-jar) @ consul-service ---
+[INFO] Building jar: C:\projects\consul-discovery\consul-service\target\consul-service.jar
+[INFO] 
+[INFO] --- spring-boot-maven-plugin:2.1.0.RELEASE:repackage (repackage) @ consul-service ---
+[INFO] Replacing main artifact C:\projects\consul-discovery\consul-service\target\consul-service.jar
+[INFO] 
+[INFO] >>> spring-boot-maven-plugin:2.1.0.RELEASE:run (default-cli) > test-compile @ consul-service >>>
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ consul-service ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 0 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:compile (default-compile) @ consul-service ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ consul-service ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory C:\projects\consul-discovery\consul-service\src\test\resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:testCompile (default-testCompile) @ consul-service ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] <<< spring-boot-maven-plugin:2.1.0.RELEASE:run (default-cli) < test-compile @ consul-service <<<
+[INFO] 
+[INFO] 
+[INFO] --- spring-boot-maven-plugin:2.1.0.RELEASE:run (default-cli) @ consul-service ---
+2018-11-18 16:24:37.037  INFO 21468 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'configurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$f2b32864] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.1.0.RELEASE)
+
+2018-11-18 16:24:41.629  INFO 21468 --- [           main] c.m.c.ConsulServiceApplication           : No active profile set, falling back to default profiles: default
+2018-11-18 16:24:44.575  WARN 21468 --- [           main] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2018-11-18 16:24:45.900  INFO 21468 --- [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=068adf7c-249a-3bee-a6a3-849fd9b1d0e7
+2018-11-18 16:24:46.218  INFO 21468 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$f2b32864] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-11-18 16:24:49.236  INFO 21468 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2018-11-18 16:24:49.310  INFO 21468 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-11-18 16:24:49.310  INFO 21468 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/9.0.12
+2018-11-18 16:24:49.345  INFO 21468 --- [           main] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Tools\Java\jdk1.8\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Microsoft SDKs\Azure\CLI2\wbin;C:\Program Files\Common Files\Microsoft Shared\Microsoft Online Services;C:\Program Files (x86)\Common Files\Microsoft Shared\Microsoft Online Services;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Tools\Git\cmd;C:\Users\elnerosl\AppData\Local\Microsoft\WindowsApps;C:\Tools\Microsoft VS Code\bin;C:\Tools\Kubernetes\Minikube;C:\Tools\CloudFoundry;C:\Program Files\MySQL\MySQL Utilities 1.6\;C:\Tools\sbt\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\Microsoft SQL Server\Client SDK\ODBC\110\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\120\Tools\Binn\ManagementStudio\;C:\Program Files (x86)\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\120\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\Tools\Binn\ManagementStudio\;C:\Tools\nodejs\;C:\Tools\Gpg4win\..\GnuPG\bin;C:\Users\elnerosl\.azure-kubectl;C:\Users\elnerosl\AppData\Local\Microsoft\WindowsApps;C:\Tools\Microsoft VS Code\bin;C:\Tools\apache-maven-3.5.2\apache-maven-3.5.2\bin;C:\Program Files\MySQL\MySQL Server 5.7\bin;C:\Tools\Packer;C:\Tools\Terraform;C:\Tools\Graphviz2.38\bin;C:\Tools\helm;C:\Tools\kubectx-0.5.0;C:\Tools\GnuWin32\bin;C:\Users\elnerosl\AppData\Roaming\npm;C:\Tools\nodejs;C:\Users\elnerosl\.dotnet\tools;C:\Program Files\Azure Cosmos DB Emulator;C:\Tools\Python27;C:\Tools\Dig;C:\Program Files\Docker\Docker\Resources\bin;;.]
+2018-11-18 16:24:49.805  INFO 21468 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-11-18 16:24:49.806  INFO 21468 --- [           main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 8140 ms
+2018-11-18 16:24:50.423  WARN 21468 --- [           main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2018-11-18 16:24:50.423  INFO 21468 --- [           main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2018-11-18 16:24:50.471  INFO 21468 --- [           main] c.netflix.config.DynamicPropertyFactory  : DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@9dd2f95
+2018-11-18 16:25:04.204  INFO 21468 --- [           main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-11-18 16:25:04.206  INFO 21468 --- [           main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'webMvcMetricsFilter' to: [/*]
+2018-11-18 16:25:04.206  INFO 21468 --- [           main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-11-18 16:25:04.209  INFO 21468 --- [           main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'formContentFilter' to: [/*]
+2018-11-18 16:25:04.209  INFO 21468 --- [           main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-11-18 16:25:04.209  INFO 21468 --- [           main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpTraceFilter' to: [/*]
+2018-11-18 16:25:04.209  INFO 21468 --- [           main] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2018-11-18 16:25:04.421  WARN 21468 --- [           main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2018-11-18 16:25:04.421  INFO 21468 --- [           main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2018-11-18 16:25:05.592  INFO 21468 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2018-11-18 16:25:07.689  INFO 21468 --- [           main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'catalogWatchTaskScheduler'
+2018-11-18 16:25:07.964  INFO 21468 --- [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 20 endpoint(s) beneath base path ''
+2018-11-18 16:25:08.866  INFO 21468 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2018-11-18 16:25:08.942  INFO 21468 --- [           main] c.m.c.ConsulServiceApplication           : Started ConsulServiceApplication in 41.391 seconds (JVM running for 62.448)
+2018-11-18 16:25:09.284 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 >> "GET /v1/catalog/services?wait=2s HTTP/1.1[\r][\n]"
+2018-11-18 16:25:09.297 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 >> "Host: 104.211.63.244:8500[\r][\n]"
+2018-11-18 16:25:09.297 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 >> "Connection: Keep-Alive[\r][\n]"
+2018-11-18 16:25:09.298 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 >> "User-Agent: Apache-HttpClient/4.5.6 (Java/1.8.0_162)[\r][\n]"
+2018-11-18 16:25:09.298 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2018-11-18 16:25:09.298 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 >> "[\r][\n]"
+2018-11-18 16:25:09.339 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 << "HTTP/1.1 200 OK[\r][\n]"
+2018-11-18 16:25:09.340 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 << "Content-Encoding: gzip[\r][\n]"
+2018-11-18 16:25:09.340 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 << "Content-Type: application/json[\r][\n]"
+2018-11-18 16:25:09.340 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 << "Vary: Accept-Encoding[\r][\n]"
+2018-11-18 16:25:09.340 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 << "X-Consul-Effective-Consistency: leader[\r][\n]"
+2018-11-18 16:25:09.341 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 << "X-Consul-Index: 30966[\r][\n]"
+2018-11-18 16:25:09.341 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 << "X-Consul-Knownleader: true[\r][\n]"
+2018-11-18 16:25:09.341 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 << "X-Consul-Lastcontact: 0[\r][\n]"
+2018-11-18 16:25:09.341 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 << "Date: Sun, 18 Nov 2018 21:25:09 GMT[\r][\n]"
+2018-11-18 16:25:09.341 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 << "Content-Length: 56[\r][\n]"
+2018-11-18 16:25:09.341 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 << "[\r][\n]"
+2018-11-18 16:25:09.342 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 << "[0x1f][0x8b][0x8][0x0][0x0][0x0][0x0][0x0][0x0][0xff][0xaa]VJ[0xce][0xcf]+.[0xcd]Q[0xb2][0x8a][0x8e][0xd5]Q*[0xae],.I[0xcd]M[0xd1]-N-*[0xcb]LN[0x5][0x9][0xd6][0x2][0x2][0x0][0x0][0xff][0xff][0x18][0x93]Iw"[0x0][0x0][0x0]"
+2018-11-18 16:25:10.418 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 >> "GET /v1/catalog/services?wait=2s&index=30966 HTTP/1.1[\r][\n]"
+2018-11-18 16:25:10.419 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 >> "Host: 104.211.63.244:8500[\r][\n]"
+2018-11-18 16:25:10.419 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 >> "Connection: Keep-Alive[\r][\n]"
+2018-11-18 16:25:10.419 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 >> "User-Agent: Apache-HttpClient/4.5.6 (Java/1.8.0_162)[\r][\n]"
+2018-11-18 16:25:10.419 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2018-11-18 16:25:10.420 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 >> "[\r][\n]"
+2018-11-18 16:25:12.556 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 << "HTTP/1.1 200 OK[\r][\n]"
+2018-11-18 16:25:12.556 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 << "Content-Encoding: gzip[\r][\n]"
+2018-11-18 16:25:12.557 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 << "Content-Type: application/json[\r][\n]"
+2018-11-18 16:25:12.557 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 << "Vary: Accept-Encoding[\r][\n]"
+2018-11-18 16:25:12.557 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 << "X-Consul-Effective-Consistency: leader[\r][\n]"
+2018-11-18 16:25:12.557 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 << "X-Consul-Index: 30966[\r][\n]"
+2018-11-18 16:25:12.557 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 << "X-Consul-Knownleader: true[\r][\n]"
+2018-11-18 16:25:12.558 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 << "X-Consul-Lastcontact: 0[\r][\n]"
+2018-11-18 16:25:12.558 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 << "Date: Sun, 18 Nov 2018 21:25:12 GMT[\r][\n]"
+2018-11-18 16:25:12.558 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 << "Content-Length: 56[\r][\n]"
+2018-11-18 16:25:12.558 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 << "[\r][\n]"
+2018-11-18 16:25:12.559 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 << "[0x1f][0x8b][0x8][0x0][0x0][0x0][0x0][0x0][0x0][0xff][0xaa]VJ[0xce][0xcf]+.[0xcd]Q[0xb2][0x8a][0x8e][0xd5]Q*[0xae],.I[0xcd]M[0xd1]-N-*[0xcb]LN[0x5][0x9][0xd6][0x2][0x2][0x0][0x0][0xff][0xff][0x18][0x93]Iw"[0x0][0x0][0x0]"
+2018-11-18 16:25:13.563 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 >> "GET /v1/catalog/services?wait=2s&index=30966 HTTP/1.1[\r][\n]"
+2018-11-18 16:25:13.564 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 >> "Host: 104.211.63.244:8500[\r][\n]"
+2018-11-18 16:25:13.564 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 >> "Connection: Keep-Alive[\r][\n]"
+2018-11-18 16:25:13.564 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 >> "User-Agent: Apache-HttpClient/4.5.6 (Java/1.8.0_162)[\r][\n]"
+2018-11-18 16:25:13.564 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2018-11-18 16:25:13.565 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 >> "[\r][\n]"
+2018-11-18 16:25:15.623 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 << "HTTP/1.1 200 OK[\r][\n]"
+2018-11-18 16:25:15.623 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 << "Content-Encoding: gzip[\r][\n]"
+2018-11-18 16:25:15.624 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 << "Content-Type: application/json[\r][\n]"
+2018-11-18 16:25:15.624 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 << "Vary: Accept-Encoding[\r][\n]"
+2018-11-18 16:25:15.624 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 << "X-Consul-Effective-Consistency: leader[\r][\n]"
+2018-11-18 16:25:15.624 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 << "X-Consul-Index: 30966[\r][\n]"
+2018-11-18 16:25:15.624 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 << "X-Consul-Knownleader: true[\r][\n]"
+2018-11-18 16:25:15.624 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 << "X-Consul-Lastcontact: 0[\r][\n]"
+2018-11-18 16:25:15.624 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 << "Date: Sun, 18 Nov 2018 21:25:15 GMT[\r][\n]"
+2018-11-18 16:25:15.625 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 << "Content-Length: 56[\r][\n]"
+2018-11-18 16:25:15.625 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 << "[\r][\n]"
+2018-11-18 16:25:15.625 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 << "[0x1f][0x8b][0x8][0x0][0x0][0x0][0x0][0x0][0x0][0xff][0xaa]VJ[0xce][0xcf]+.[0xcd]Q[0xb2][0x8a][0x8e][0xd5]Q*[0xae],.I[0xcd]M[0xd1]-N-*[0xcb]LN[0x5][0x9][0xd6][0x2][0x2][0x0][0x0][0xff][0xff][0x18][0x93]Iw"[0x0][0x0][0x0]"
+2018-11-18 16:25:16.629 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 >> "GET /v1/catalog/services?wait=2s&index=30966 HTTP/1.1[\r][\n]"
+2018-11-18 16:25:16.629 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 >> "Host: 104.211.63.244:8500[\r][\n]"
+2018-11-18 16:25:16.629 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 >> "Connection: Keep-Alive[\r][\n]"
+2018-11-18 16:25:16.629 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 >> "User-Agent: Apache-HttpClient/4.5.6 (Java/1.8.0_162)[\r][\n]"
+2018-11-18 16:25:16.629 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2018-11-18 16:25:16.629 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 >> "[\r][\n]"
+2018-11-18 16:25:18.798 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 << "HTTP/1.1 200 OK[\r][\n]"
+2018-11-18 16:25:18.798 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 << "Content-Encoding: gzip[\r][\n]"
+2018-11-18 16:25:18.798 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 << "Content-Type: application/json[\r][\n]"
+2018-11-18 16:25:18.798 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 << "Vary: Accept-Encoding[\r][\n]"
+2018-11-18 16:25:18.798 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 << "X-Consul-Effective-Consistency: leader[\r][\n]"
+2018-11-18 16:25:18.799 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 << "X-Consul-Index: 30966[\r][\n]"
+2018-11-18 16:25:18.799 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 << "X-Consul-Knownleader: true[\r][\n]"
+2018-11-18 16:25:18.799 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 << "X-Consul-Lastcontact: 0[\r][\n]"
+2018-11-18 16:25:18.799 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 << "Date: Sun, 18 Nov 2018 21:25:18 GMT[\r][\n]"
+2018-11-18 16:25:18.799 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 << "Content-Length: 56[\r][\n]"
+2018-11-18 16:25:18.799 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 << "[\r][\n]"
+2018-11-18 16:25:18.799 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 << "[0x1f][0x8b][0x8][0x0][0x0][0x0][0x0][0x0][0x0][0xff][0xaa]VJ[0xce][0xcf]+.[0xcd]Q[0xb2][0x8a][0x8e][0xd5]Q*[0xae],.I[0xcd]M[0xd1]-N-*[0xcb]LN[0x5][0x9][0xd6][0x2][0x2][0x0][0x0][0xff][0xff][0x18][0x93]Iw"[0x0][0x0][0x0]"
+2018-11-18 16:25:19.804 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 >> "GET /v1/catalog/services?wait=2s&index=30966 HTTP/1.1[\r][\n]"
+2018-11-18 16:25:19.804 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 >> "Host: 104.211.63.244:8500[\r][\n]"
+2018-11-18 16:25:19.804 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 >> "Connection: Keep-Alive[\r][\n]"
+2018-11-18 16:25:19.804 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 >> "User-Agent: Apache-HttpClient/4.5.6 (Java/1.8.0_162)[\r][\n]"
+2018-11-18 16:25:19.804 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2018-11-18 16:25:19.804 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 >> "[\r][\n]"
+2018-11-18 16:25:21.924 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 << "HTTP/1.1 200 OK[\r][\n]"
+2018-11-18 16:25:21.925 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 << "Content-Encoding: gzip[\r][\n]"
+2018-11-18 16:25:21.925 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 << "Content-Type: application/json[\r][\n]"
+2018-11-18 16:25:21.925 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 << "Vary: Accept-Encoding[\r][\n]"
+2018-11-18 16:25:21.925 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 << "X-Consul-Effective-Consistency: leader[\r][\n]"
+2018-11-18 16:25:21.925 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 << "X-Consul-Index: 30966[\r][\n]"
+2018-11-18 16:25:21.925 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 << "X-Consul-Knownleader: true[\r][\n]"
+2018-11-18 16:25:21.925 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 << "X-Consul-Lastcontact: 0[\r][\n]"
+2018-11-18 16:25:21.925 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 << "Date: Sun, 18 Nov 2018 21:25:21 GMT[\r][\n]"
+2018-11-18 16:25:21.926 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 << "Content-Length: 56[\r][\n]"
+2018-11-18 16:25:21.926 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 << "[\r][\n]"
+2018-11-18 16:25:21.926 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 << "[0x1f][0x8b][0x8][0x0][0x0][0x0][0x0][0x0][0x0][0xff][0xaa]VJ[0xce][0xcf]+.[0xcd]Q[0xb2][0x8a][0x8e][0xd5]Q*[0xae],.I[0xcd]M[0xd1]-N-*[0xcb]LN[0x5][0x9][0xd6][0x2][0x2][0x0][0x0][0xff][0xff][0x18][0x93]Iw"[0x0][0x0][0x0]"
+2018-11-18 16:25:22.931 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 >> "GET /v1/catalog/services?wait=2s&index=30966 HTTP/1.1[\r][\n]"
+2018-11-18 16:25:22.931 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 >> "Host: 104.211.63.244:8500[\r][\n]"
+2018-11-18 16:25:22.932 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 >> "Connection: Keep-Alive[\r][\n]"
+2018-11-18 16:25:22.932 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 >> "User-Agent: Apache-HttpClient/4.5.6 (Java/1.8.0_162)[\r][\n]"
+2018-11-18 16:25:22.932 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2018-11-18 16:25:22.932 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 >> "[\r][\n]"
+2018-11-18 16:25:25.044 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 << "HTTP/1.1 200 OK[\r][\n]"
+2018-11-18 16:25:25.045 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 << "Content-Encoding: gzip[\r][\n]"
+2018-11-18 16:25:25.045 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 << "Content-Type: application/json[\r][\n]"
+2018-11-18 16:25:25.045 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 << "Vary: Accept-Encoding[\r][\n]"
+2018-11-18 16:25:25.046 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 << "X-Consul-Effective-Consistency: leader[\r][\n]"
+2018-11-18 16:25:25.046 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 << "X-Consul-Index: 30966[\r][\n]"
+2018-11-18 16:25:25.046 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 << "X-Consul-Knownleader: true[\r][\n]"
+2018-11-18 16:25:25.046 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 << "X-Consul-Lastcontact: 0[\r][\n]"
+2018-11-18 16:25:25.046 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 << "Date: Sun, 18 Nov 2018 21:25:25 GMT[\r][\n]"
+2018-11-18 16:25:25.046 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 << "Content-Length: 56[\r][\n]"
+2018-11-18 16:25:25.046 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 << "[\r][\n]"
+2018-11-18 16:25:25.046 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 << "[0x1f][0x8b][0x8][0x0][0x0][0x0][0x0][0x0][0x0][0xff][0xaa]VJ[0xce][0xcf]+.[0xcd]Q[0xb2][0x8a][0x8e][0xd5]Q*[0xae],.I[0xcd]M[0xd1]-N-*[0xcb]LN[0x5][0x9][0xd6][0x2][0x2][0x0][0x0][0xff][0xff][0x18][0x93]Iw"[0x0][0x0][0x0]"
+2018-11-18 16:25:26.049 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 >> "GET /v1/catalog/services?wait=2s&index=30966 HTTP/1.1[\r][\n]"
+2018-11-18 16:25:26.050 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 >> "Host: 104.211.63.244:8500[\r][\n]"
+2018-11-18 16:25:26.050 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 >> "Connection: Keep-Alive[\r][\n]"
+2018-11-18 16:25:26.050 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 >> "User-Agent: Apache-HttpClient/4.5.6 (Java/1.8.0_162)[\r][\n]"
+2018-11-18 16:25:26.050 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2018-11-18 16:25:26.050 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 >> "[\r][\n]"
+2018-11-18 16:25:28.192 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 << "HTTP/1.1 200 OK[\r][\n]"
+2018-11-18 16:25:28.192 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 << "Content-Encoding: gzip[\r][\n]"
+2018-11-18 16:25:28.192 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 << "Content-Type: application/json[\r][\n]"
+2018-11-18 16:25:28.192 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 << "Vary: Accept-Encoding[\r][\n]"
+2018-11-18 16:25:28.192 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 << "X-Consul-Effective-Consistency: leader[\r][\n]"
+2018-11-18 16:25:28.192 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 << "X-Consul-Index: 30966[\r][\n]"
+2018-11-18 16:25:28.193 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 << "X-Consul-Knownleader: true[\r][\n]"
+2018-11-18 16:25:28.193 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 << "X-Consul-Lastcontact: 0[\r][\n]"
+2018-11-18 16:25:28.193 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 << "Date: Sun, 18 Nov 2018 21:25:28 GMT[\r][\n]"
+2018-11-18 16:25:28.193 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 << "Content-Length: 56[\r][\n]"
+2018-11-18 16:25:28.193 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 << "[\r][\n]"
+2018-11-18 16:25:28.193 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 << "[0x1f][0x8b][0x8][0x0][0x0][0x0][0x0][0x0][0x0][0xff][0xaa]VJ[0xce][0xcf]+.[0xcd]Q[0xb2][0x8a][0x8e][0xd5]Q*[0xae],.I[0xcd]M[0xd1]-N-*[0xcb]LN[0x5][0x9][0xd6][0x2][0x2][0x0][0x0][0xff][0xff][0x18][0x93]Iw"[0x0][0x0][0x0]"
+2018-11-18 16:25:29.201 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 >> "GET /v1/catalog/services?wait=2s&index=30966 HTTP/1.1[\r][\n]"
+2018-11-18 16:25:29.201 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 >> "Host: 104.211.63.244:8500[\r][\n]"
+2018-11-18 16:25:29.201 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 >> "Connection: Keep-Alive[\r][\n]"
+2018-11-18 16:25:29.201 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 >> "User-Agent: Apache-HttpClient/4.5.6 (Java/1.8.0_162)[\r][\n]"
+2018-11-18 16:25:29.202 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2018-11-18 16:25:29.202 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 >> "[\r][\n]"
+2018-11-18 16:25:31.394 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 << "HTTP/1.1 200 OK[\r][\n]"
+2018-11-18 16:25:31.395 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 << "Content-Encoding: gzip[\r][\n]"
+2018-11-18 16:25:31.395 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 << "Content-Type: application/json[\r][\n]"
+2018-11-18 16:25:31.395 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 << "Vary: Accept-Encoding[\r][\n]"
+2018-11-18 16:25:31.395 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 << "X-Consul-Effective-Consistency: leader[\r][\n]"
+2018-11-18 16:25:31.395 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 << "X-Consul-Index: 30966[\r][\n]"
+2018-11-18 16:25:31.395 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 << "X-Consul-Knownleader: true[\r][\n]"
+2018-11-18 16:25:31.395 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 << "X-Consul-Lastcontact: 0[\r][\n]"
+2018-11-18 16:25:31.396 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 << "Date: Sun, 18 Nov 2018 21:25:31 GMT[\r][\n]"
+2018-11-18 16:25:31.396 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 << "Content-Length: 56[\r][\n]"
+2018-11-18 16:25:31.396 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 << "[\r][\n]"
+2018-11-18 16:25:31.396 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 << "[0x1f][0x8b][0x8][0x0][0x0][0x0][0x0][0x0][0x0][0xff][0xaa]VJ[0xce][0xcf]+.[0xcd]Q[0xb2][0x8a][0x8e][0xd5]Q*[0xae],.I[0xcd]M[0xd1]-N-*[0xcb]LN[0x5][0x9][0xd6][0x2][0x2][0x0][0x0][0xff][0xff][0x18][0x93]Iw"[0x0][0x0][0x0]"
+2018-11-18 16:25:32.399 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 >> "GET /v1/catalog/services?wait=2s&index=30966 HTTP/1.1[\r][\n]"
+2018-11-18 16:25:32.399 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 >> "Host: 104.211.63.244:8500[\r][\n]"
+2018-11-18 16:25:32.399 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 >> "Connection: Keep-Alive[\r][\n]"
+2018-11-18 16:25:32.400 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 >> "User-Agent: Apache-HttpClient/4.5.6 (Java/1.8.0_162)[\r][\n]"
+2018-11-18 16:25:32.400 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2018-11-18 16:25:32.400 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 >> "[\r][\n]"
+2018-11-18 16:25:34.567 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 << "HTTP/1.1 200 OK[\r][\n]"
+2018-11-18 16:25:34.567 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 << "Content-Encoding: gzip[\r][\n]"
+2018-11-18 16:25:34.567 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 << "Content-Type: application/json[\r][\n]"
+2018-11-18 16:25:34.567 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 << "Vary: Accept-Encoding[\r][\n]"
+2018-11-18 16:25:34.568 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 << "X-Consul-Effective-Consistency: leader[\r][\n]"
+2018-11-18 16:25:34.568 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 << "X-Consul-Index: 30966[\r][\n]"
+2018-11-18 16:25:34.568 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 << "X-Consul-Knownleader: true[\r][\n]"
+2018-11-18 16:25:34.568 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 << "X-Consul-Lastcontact: 0[\r][\n]"
+2018-11-18 16:25:34.568 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 << "Date: Sun, 18 Nov 2018 21:25:34 GMT[\r][\n]"
+2018-11-18 16:25:34.569 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 << "Content-Length: 56[\r][\n]"
+2018-11-18 16:25:34.569 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 << "[\r][\n]"
+2018-11-18 16:25:34.569 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 << "[0x1f][0x8b][0x8][0x0][0x0][0x0][0x0][0x0][0x0][0xff][0xaa]VJ[0xce][0xcf]+.[0xcd]Q[0xb2][0x8a][0x8e][0xd5]Q*[0xae],.I[0xcd]M[0xd1]-N-*[0xcb]LN[0x5][0x9][0xd6][0x2][0x2][0x0][0x0][0xff][0xff][0x18][0x93]Iw"[0x0][0x0][0x0]"
+2018-11-18 16:25:35.573 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 >> "GET /v1/catalog/services?wait=2s&index=30966 HTTP/1.1[\r][\n]"
+2018-11-18 16:25:35.573 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 >> "Host: 104.211.63.244:8500[\r][\n]"
+2018-11-18 16:25:35.574 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 >> "Connection: Keep-Alive[\r][\n]"
+2018-11-18 16:25:35.574 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 >> "User-Agent: Apache-HttpClient/4.5.6 (Java/1.8.0_162)[\r][\n]"
+2018-11-18 16:25:35.574 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2018-11-18 16:25:35.575 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 >> "[\r][\n]"
+2018-11-18 16:25:37.743 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 << "HTTP/1.1 200 OK[\r][\n]"
+2018-11-18 16:25:37.743 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 << "Content-Encoding: gzip[\r][\n]"
+2018-11-18 16:25:37.744 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 << "Content-Type: application/json[\r][\n]"
+2018-11-18 16:25:37.744 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 << "Vary: Accept-Encoding[\r][\n]"
+2018-11-18 16:25:37.744 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 << "X-Consul-Effective-Consistency: leader[\r][\n]"
+2018-11-18 16:25:37.744 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 << "X-Consul-Index: 30966[\r][\n]"
+2018-11-18 16:25:37.744 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 << "X-Consul-Knownleader: true[\r][\n]"
+2018-11-18 16:25:37.744 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 << "X-Consul-Lastcontact: 0[\r][\n]"
+2018-11-18 16:25:37.744 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 << "Date: Sun, 18 Nov 2018 21:25:37 GMT[\r][\n]"
+2018-11-18 16:25:37.744 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 << "Content-Length: 56[\r][\n]"
+2018-11-18 16:25:37.745 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 << "[\r][\n]"
+2018-11-18 16:25:37.745 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 << "[0x1f][0x8b][0x8][0x0][0x0][0x0][0x0][0x0][0x0][0xff][0xaa]VJ[0xce][0xcf]+.[0xcd]Q[0xb2][0x8a][0x8e][0xd5]Q*[0xae],.I[0xcd]M[0xd1]-N-*[0xcb]LN[0x5][0x9][0xd6][0x2][0x2][0x0][0x0][0xff][0xff][0x18][0x93]Iw"[0x0][0x0][0x0]"
+2018-11-18 16:25:38.747 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 >> "GET /v1/catalog/services?wait=2s&index=30966 HTTP/1.1[\r][\n]"
+2018-11-18 16:25:38.747 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 >> "Host: 104.211.63.244:8500[\r][\n]"
+2018-11-18 16:25:38.747 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 >> "Connection: Keep-Alive[\r][\n]"
+2018-11-18 16:25:38.748 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 >> "User-Agent: Apache-HttpClient/4.5.6 (Java/1.8.0_162)[\r][\n]"
+2018-11-18 16:25:38.748 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2018-11-18 16:25:38.748 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 >> "[\r][\n]"
+2018-11-18 16:25:40.815 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 << "HTTP/1.1 200 OK[\r][\n]"
+2018-11-18 16:25:40.815 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 << "Content-Encoding: gzip[\r][\n]"
+2018-11-18 16:25:40.815 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 << "Content-Type: application/json[\r][\n]"
+2018-11-18 16:25:40.815 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 << "Vary: Accept-Encoding[\r][\n]"
+2018-11-18 16:25:40.815 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 << "X-Consul-Effective-Consistency: leader[\r][\n]"
+2018-11-18 16:25:40.816 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 << "X-Consul-Index: 30966[\r][\n]"
+2018-11-18 16:25:40.816 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 << "X-Consul-Knownleader: true[\r][\n]"
+2018-11-18 16:25:40.816 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 << "X-Consul-Lastcontact: 0[\r][\n]"
+2018-11-18 16:25:40.816 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 << "Date: Sun, 18 Nov 2018 21:25:40 GMT[\r][\n]"
+2018-11-18 16:25:40.816 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 << "Content-Length: 56[\r][\n]"
+2018-11-18 16:25:40.816 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 << "[\r][\n]"
+2018-11-18 16:25:40.817 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 << "[0x1f][0x8b][0x8][0x0][0x0][0x0][0x0][0x0][0x0][0xff][0xaa]VJ[0xce][0xcf]+.[0xcd]Q[0xb2][0x8a][0x8e][0xd5]Q*[0xae],.I[0xcd]M[0xd1]-N-*[0xcb]LN[0x5][0x9][0xd6][0x2][0x2][0x0][0x0][0xff][0xff][0x18][0x93]Iw"[0x0][0x0][0x0]"
+2018-11-18 16:25:41.821 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 >> "GET /v1/catalog/services?wait=2s&index=30966 HTTP/1.1[\r][\n]"
+2018-11-18 16:25:41.822 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 >> "Host: 104.211.63.244:8500[\r][\n]"
+2018-11-18 16:25:41.823 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 >> "Connection: Keep-Alive[\r][\n]"
+2018-11-18 16:25:41.823 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 >> "User-Agent: Apache-HttpClient/4.5.6 (Java/1.8.0_162)[\r][\n]"
+2018-11-18 16:25:41.823 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2018-11-18 16:25:41.823 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 >> "[\r][\n]"
+2018-11-18 16:25:44.091 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 << "HTTP/1.1 200 OK[\r][\n]"
+2018-11-18 16:25:44.091 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 << "Content-Encoding: gzip[\r][\n]"
+2018-11-18 16:25:44.091 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 << "Content-Type: application/json[\r][\n]"
+2018-11-18 16:25:44.091 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 << "Vary: Accept-Encoding[\r][\n]"
+2018-11-18 16:25:44.092 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 << "X-Consul-Effective-Consistency: leader[\r][\n]"
+2018-11-18 16:25:44.092 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 << "X-Consul-Index: 30966[\r][\n]"
+2018-11-18 16:25:44.092 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 << "X-Consul-Knownleader: true[\r][\n]"
+2018-11-18 16:25:44.092 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 << "X-Consul-Lastcontact: 0[\r][\n]"
+2018-11-18 16:25:44.092 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 << "Date: Sun, 18 Nov 2018 21:25:43 GMT[\r][\n]"
+2018-11-18 16:25:44.092 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 << "Content-Length: 56[\r][\n]"
+2018-11-18 16:25:44.092 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 << "[\r][\n]"
+2018-11-18 16:25:44.092 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 << "[0x1f][0x8b][0x8][0x0][0x0][0x0][0x0][0x0][0x0][0xff][0xaa]VJ[0xce][0xcf]+.[0xcd]Q[0xb2][0x8a][0x8e][0xd5]Q*[0xae],.I[0xcd]M[0xd1]-N-*[0xcb]LN[0x5][0x9][0xd6][0x2][0x2][0x0][0x0][0xff][0xff][0x18][0x93]Iw"[0x0][0x0][0x0]"
+2018-11-18 16:25:45.096 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 >> "GET /v1/catalog/services?wait=2s&index=30966 HTTP/1.1[\r][\n]"
+2018-11-18 16:25:45.096 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 >> "Host: 104.211.63.244:8500[\r][\n]"
+2018-11-18 16:25:45.096 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 >> "Connection: Keep-Alive[\r][\n]"
+2018-11-18 16:25:45.096 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 >> "User-Agent: Apache-HttpClient/4.5.6 (Java/1.8.0_162)[\r][\n]"
+2018-11-18 16:25:45.096 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2018-11-18 16:25:45.096 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 >> "[\r][\n]"
+2018-11-18 16:25:47.265 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 << "HTTP/1.1 200 OK[\r][\n]"
+2018-11-18 16:25:47.266 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 << "Content-Encoding: gzip[\r][\n]"
+2018-11-18 16:25:47.266 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 << "Content-Type: application/json[\r][\n]"
+2018-11-18 16:25:47.266 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 << "Vary: Accept-Encoding[\r][\n]"
+2018-11-18 16:25:47.266 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 << "X-Consul-Effective-Consistency: leader[\r][\n]"
+2018-11-18 16:25:47.266 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 << "X-Consul-Index: 30966[\r][\n]"
+2018-11-18 16:25:47.266 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 << "X-Consul-Knownleader: true[\r][\n]"
+2018-11-18 16:25:47.267 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 << "X-Consul-Lastcontact: 0[\r][\n]"
+2018-11-18 16:25:47.267 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 << "Date: Sun, 18 Nov 2018 21:25:47 GMT[\r][\n]"
+2018-11-18 16:25:47.267 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 << "Content-Length: 56[\r][\n]"
+2018-11-18 16:25:47.267 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 << "[\r][\n]"
+2018-11-18 16:25:47.267 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 << "[0x1f][0x8b][0x8][0x0][0x0][0x0][0x0][0x0][0x0][0xff][0xaa]VJ[0xce][0xcf]+.[0xcd]Q[0xb2][0x8a][0x8e][0xd5]Q*[0xae],.I[0xcd]M[0xd1]-N-*[0xcb]LN[0x5][0x9][0xd6][0x2][0x2][0x0][0x0][0xff][0xff][0x18][0x93]Iw"[0x0][0x0][0x0]"
+2018-11-18 16:25:48.271 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 >> "GET /v1/catalog/services?wait=2s&index=30966 HTTP/1.1[\r][\n]"
+2018-11-18 16:25:48.271 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 >> "Host: 104.211.63.244:8500[\r][\n]"
+2018-11-18 16:25:48.271 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 >> "Connection: Keep-Alive[\r][\n]"
+2018-11-18 16:25:48.272 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 >> "User-Agent: Apache-HttpClient/4.5.6 (Java/1.8.0_162)[\r][\n]"
+2018-11-18 16:25:48.272 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2018-11-18 16:25:48.272 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 >> "[\r][\n]"
+2018-11-18 16:25:50.442 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 << "HTTP/1.1 200 OK[\r][\n]"
+2018-11-18 16:25:50.442 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 << "Content-Encoding: gzip[\r][\n]"
+2018-11-18 16:25:50.443 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 << "Content-Type: application/json[\r][\n]"
+2018-11-18 16:25:50.443 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 << "Vary: Accept-Encoding[\r][\n]"
+2018-11-18 16:25:50.443 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 << "X-Consul-Effective-Consistency: leader[\r][\n]"
+2018-11-18 16:25:50.443 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 << "X-Consul-Index: 30966[\r][\n]"
+2018-11-18 16:25:50.443 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 << "X-Consul-Knownleader: true[\r][\n]"
+2018-11-18 16:25:50.443 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 << "X-Consul-Lastcontact: 0[\r][\n]"
+2018-11-18 16:25:50.443 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 << "Date: Sun, 18 Nov 2018 21:25:50 GMT[\r][\n]"
+2018-11-18 16:25:50.443 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 << "Content-Length: 56[\r][\n]"
+2018-11-18 16:25:50.443 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 << "[\r][\n]"
+2018-11-18 16:25:50.443 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 << "[0x1f][0x8b][0x8][0x0][0x0][0x0][0x0][0x0][0x0][0xff][0xaa]VJ[0xce][0xcf]+.[0xcd]Q[0xb2][0x8a][0x8e][0xd5]Q*[0xae],.I[0xcd]M[0xd1]-N-*[0xcb]LN[0x5][0x9][0xd6][0x2][0x2][0x0][0x0][0xff][0xff][0x18][0x93]Iw"[0x0][0x0][0x0]"
+2018-11-18 16:25:51.447 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 >> "GET /v1/catalog/services?wait=2s&index=30966 HTTP/1.1[\r][\n]"
+2018-11-18 16:25:51.447 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 >> "Host: 104.211.63.244:8500[\r][\n]"
+2018-11-18 16:25:51.447 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 >> "Connection: Keep-Alive[\r][\n]"
+2018-11-18 16:25:51.448 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 >> "User-Agent: Apache-HttpClient/4.5.6 (Java/1.8.0_162)[\r][\n]"
+2018-11-18 16:25:51.448 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2018-11-18 16:25:51.448 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 >> "[\r][\n]"
+2018-11-18 16:25:53.615 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 << "HTTP/1.1 200 OK[\r][\n]"
+2018-11-18 16:25:53.616 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 << "Content-Encoding: gzip[\r][\n]"
+2018-11-18 16:25:53.616 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 << "Content-Type: application/json[\r][\n]"
+2018-11-18 16:25:53.616 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 << "Vary: Accept-Encoding[\r][\n]"
+2018-11-18 16:25:53.617 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 << "X-Consul-Effective-Consistency: leader[\r][\n]"
+2018-11-18 16:25:53.617 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 << "X-Consul-Index: 30966[\r][\n]"
+2018-11-18 16:25:53.617 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 << "X-Consul-Knownleader: true[\r][\n]"
+2018-11-18 16:25:53.618 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 << "X-Consul-Lastcontact: 0[\r][\n]"
+2018-11-18 16:25:53.618 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 << "Date: Sun, 18 Nov 2018 21:25:53 GMT[\r][\n]"
+2018-11-18 16:25:53.618 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 << "Content-Length: 56[\r][\n]"
+2018-11-18 16:25:53.618 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 << "[\r][\n]"
+2018-11-18 16:25:53.619 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 << "[0x1f][0x8b][0x8][0x0][0x0][0x0][0x0][0x0][0x0][0xff][0xaa]VJ[0xce][0xcf]+.[0xcd]Q[0xb2][0x8a][0x8e][0xd5]Q*[0xae],.I[0xcd]M[0xd1]-N-*[0xcb]LN[0x5][0x9][0xd6][0x2][0x2][0x0][0x0][0xff][0xff][0x18][0x93]Iw"[0x0][0x0][0x0]"
+2018-11-18 16:25:54.623 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 >> "GET /v1/catalog/services?wait=2s&index=30966 HTTP/1.1[\r][\n]"
+2018-11-18 16:25:54.623 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 >> "Host: 104.211.63.244:8500[\r][\n]"
+2018-11-18 16:25:54.624 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 >> "Connection: Keep-Alive[\r][\n]"
+2018-11-18 16:25:54.624 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 >> "User-Agent: Apache-HttpClient/4.5.6 (Java/1.8.0_162)[\r][\n]"
+2018-11-18 16:25:54.624 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2018-11-18 16:25:54.624 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 >> "[\r][\n]"
+2018-11-18 16:25:56.731 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 << "HTTP/1.1 200 OK[\r][\n]"
+2018-11-18 16:25:56.731 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 << "Content-Encoding: gzip[\r][\n]"
+2018-11-18 16:25:56.731 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 << "Content-Type: application/json[\r][\n]"
+2018-11-18 16:25:56.731 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 << "Vary: Accept-Encoding[\r][\n]"
+2018-11-18 16:25:56.731 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 << "X-Consul-Effective-Consistency: leader[\r][\n]"
+2018-11-18 16:25:56.731 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 << "X-Consul-Index: 30966[\r][\n]"
+2018-11-18 16:25:56.731 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 << "X-Consul-Knownleader: true[\r][\n]"
+2018-11-18 16:25:56.732 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 << "X-Consul-Lastcontact: 0[\r][\n]"
+2018-11-18 16:25:56.732 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 << "Date: Sun, 18 Nov 2018 21:25:56 GMT[\r][\n]"
+2018-11-18 16:25:56.732 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 << "Content-Length: 56[\r][\n]"
+2018-11-18 16:25:56.732 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 << "[\r][\n]"
+2018-11-18 16:25:56.732 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 << "[0x1f][0x8b][0x8][0x0][0x0][0x0][0x0][0x0][0x0][0xff][0xaa]VJ[0xce][0xcf]+.[0xcd]Q[0xb2][0x8a][0x8e][0xd5]Q*[0xae],.I[0xcd]M[0xd1]-N-*[0xcb]LN[0x5][0x9][0xd6][0x2][0x2][0x0][0x0][0xff][0xff][0x18][0x93]Iw"[0x0][0x0][0x0]"
+2018-11-18 16:25:57.735 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 >> "GET /v1/catalog/services?wait=2s&index=30966 HTTP/1.1[\r][\n]"
+2018-11-18 16:25:57.736 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 >> "Host: 104.211.63.244:8500[\r][\n]"
+2018-11-18 16:25:57.737 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 >> "Connection: Keep-Alive[\r][\n]"
+2018-11-18 16:25:57.737 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 >> "User-Agent: Apache-HttpClient/4.5.6 (Java/1.8.0_162)[\r][\n]"
+2018-11-18 16:25:57.737 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2018-11-18 16:25:57.737 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 >> "[\r][\n]"
+2018-11-18 16:25:59.965 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 << "HTTP/1.1 200 OK[\r][\n]"
+2018-11-18 16:25:59.965 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 << "Content-Encoding: gzip[\r][\n]"
+2018-11-18 16:25:59.965 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 << "Content-Type: application/json[\r][\n]"
+2018-11-18 16:25:59.965 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 << "Vary: Accept-Encoding[\r][\n]"
+2018-11-18 16:25:59.965 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 << "X-Consul-Effective-Consistency: leader[\r][\n]"
+2018-11-18 16:25:59.965 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 << "X-Consul-Index: 30966[\r][\n]"
+2018-11-18 16:25:59.966 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 << "X-Consul-Knownleader: true[\r][\n]"
+2018-11-18 16:25:59.966 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 << "X-Consul-Lastcontact: 0[\r][\n]"
+2018-11-18 16:25:59.966 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 << "Date: Sun, 18 Nov 2018 21:25:59 GMT[\r][\n]"
+2018-11-18 16:25:59.966 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 << "Content-Length: 56[\r][\n]"
+2018-11-18 16:25:59.966 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 << "[\r][\n]"
+2018-11-18 16:25:59.966 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 << "[0x1f][0x8b][0x8][0x0][0x0][0x0][0x0][0x0][0x0][0xff][0xaa]VJ[0xce][0xcf]+.[0xcd]Q[0xb2][0x8a][0x8e][0xd5]Q*[0xae],.I[0xcd]M[0xd1]-N-*[0xcb]LN[0x5][0x9][0xd6][0x2][0x2][0x0][0x0][0xff][0xff][0x18][0x93]Iw"[0x0][0x0][0x0]"
+2018-11-18 16:26:00.968 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 >> "GET /v1/catalog/services?wait=2s&index=30966 HTTP/1.1[\r][\n]"
+2018-11-18 16:26:00.969 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 >> "Host: 104.211.63.244:8500[\r][\n]"
+2018-11-18 16:26:00.969 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 >> "Connection: Keep-Alive[\r][\n]"
+2018-11-18 16:26:00.969 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 >> "User-Agent: Apache-HttpClient/4.5.6 (Java/1.8.0_162)[\r][\n]"
+2018-11-18 16:26:00.969 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2018-11-18 16:26:00.969 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 >> "[\r][\n]"
+2018-11-18 16:26:02.016  INFO 21468 --- [       Thread-9] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService 'catalogWatchTaskScheduler'
+2018-11-18 16:26:02.022  INFO 21468 --- [       Thread-9] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2018-11-18 16:26:03.138 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 << "HTTP/1.1 200 OK[\r][\n]"
+2018-11-18 16:26:03.138 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 << "Content-Encoding: gzip[\r][\n]"
+2018-11-18 16:26:03.139 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 << "Content-Type: application/json[\r][\n]"
+2018-11-18 16:26:03.139 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 << "Vary: Accept-Encoding[\r][\n]"
+2018-11-18 16:26:03.139 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 << "X-Consul-Effective-Consistency: leader[\r][\n]"
+2018-11-18 16:26:03.139 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 << "X-Consul-Index: 30966[\r][\n]"
+2018-11-18 16:26:03.139 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 << "X-Consul-Knownleader: true[\r][\n]"
+2018-11-18 16:26:03.139 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 << "X-Consul-Lastcontact: 0[\r][\n]"
+2018-11-18 16:26:03.139 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 << "Date: Sun, 18 Nov 2018 21:26:03 GMT[\r][\n]"
+2018-11-18 16:26:03.139 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 << "Content-Length: 56[\r][\n]"
+2018-11-18 16:26:03.139 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 << "[\r][\n]"
+2018-11-18 16:26:03.140 DEBUG 21468 --- [TaskScheduler-1] org.apache.http.wire                     : http-outgoing-0 << "[0x1f][0x8b][0x8][0x0][0x0][0x0][0x0][0x0][0x0][0xff][0xaa]VJ[0xce][0xcf]+.[0xcd]Q[0xb2][0x8a][0x8e][0xd5]Q*[0xae],.I[0xcd]M[0xd1]-N-*[0xcb]LN[0x5][0x9][0xd6][0x2][0x2][0x0][0x0][0xff][0xff][0x18][0x93]Iw"[0x0][0x0][0x0]"
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 01:54 min
+Terminate batch job (Y/N)? Terminate batch job (Y/N)? Terminate batch job (Y/N)? Terminate batch job (Y/N)? 

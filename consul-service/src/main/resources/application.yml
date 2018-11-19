@@ -13,6 +13,7 @@ spring:
         #healthCheckPath: /actuator/health
         healthCheckInterval: 60s
         port: 80
+        hostname: ${WEBSITE_HOSTNAME}
         #instanceId: ${spring.application.name}:${random.value}
         healthCheckUrl: http://consul-spring-app.azurewebsites.net/actuator/health
         #tags: spring, profile=prod
@@ -30,8 +31,6 @@ endpoints:
     sensitive: false
 
 logging:
-  #path: D:\\home\\LogFiles
-  #config: logback.xml
   level:
     org.springframework.cloud.consul: DEBUG
     root: INFO

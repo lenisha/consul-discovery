@@ -32,12 +32,15 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
+
 		</dependency>
+
 
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-consul-discovery</artifactId>
 		</dependency>
+
 
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -91,17 +94,15 @@
                <appSettings>
                  <property>
                       <name>JAVA_OPTS</name>
-                      <value>-Dspring.cloud.consul.host=104.211.63.244</value>
+                      <value>-Dspring.cloud.consul.host=40.76.5.79</value>
                   </property>
 
                     <!-- Add APPLICATION_INSIGHTS_IKEY - Instrumentation key-->
                </appSettings>
 
-                <deploymentType>war</deploymentType>
-                <warFile></warFile>
-  				<path></path>
-				<!-- Resources to be deployed to your Web App -->
-                
+                <deploymentType>jar</deploymentType>
+				<jarFile></jarFile>
+
             </configuration>
          </plugin>
 		</plugins>

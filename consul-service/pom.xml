@@ -94,14 +94,15 @@
                <appSettings>
                  <property>
                       <name>JAVA_OPTS</name>
-                      <value>-Dspring.cloud.consul.host=40.76.5.79</value>
+                      <value>-Dspring.cloud.consul.host=13.68.199.4 -Dspring.cloud.consul.port=80</value>
                   </property>
 
                     <!-- Add APPLICATION_INSIGHTS_IKEY - Instrumentation key-->
                </appSettings>
 
                 <deploymentType>jar</deploymentType>
-				<jarFile></jarFile>
+                <jarFile></jarFile>
+				<path></path>
 
             </configuration>
          </plugin>

@@ -1,5 +1,7 @@
 package com.microsoft.consulservice.config;
 
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
 import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingBean;
@@ -17,6 +19,8 @@ import org.springframework.core.env.Environment;
 //@AutoConfigurationAfter(ConsulAutoServiceRegistrationAutoConfiguration.class)
 public class ConsulConfig implements ApplicationContextAware {
 
+    private static Log log = LogFactory.getLog(ConsulConfig.class);
+
     @Autowired(required=false)
     private ConsulAutoServiceRegistration registration;
 
@@ -31,6 +35,8 @@ public class ConsulConfig implements ApplicationContextAware {
             String portNumber = environment.getProperty("spring.cloud.consul.discovery.port");
             registration.setPort(Integer.parseInt(portNumber));
             consulAutoRegistration.getService().setAddress(environment.getProperty("spring.cloud.consul.discovery.hostname"));
+            log.info("Registering service to:" + consulAutoRegistration.getHost() + " " + consulAutoRegistration.getPort());
+
             registration.start();
         }
     }

@@ -3,8 +3,8 @@ spring:
   cloud:
     consul:
       enabled: true
-      host: 40.76.5.79
-      port: 8500
+      host: 13.68.199.4
+      port: 80
       discovery:
         register: true
         discovery: enabled
